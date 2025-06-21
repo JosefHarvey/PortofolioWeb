@@ -1,7 +1,12 @@
+import About from './assets/component/about';
+import Navbar from './assets/component/navbar'
 
-import './App.css'
-
-export default function index() {
- 
+export default function Index() {
+ return (
+    <>
+    <Navbar />
+    <About /> 
+    </>
+ );
 }
 
