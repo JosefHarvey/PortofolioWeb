@@ -1,8 +1,8 @@
 
 export default function Navbar(){
    return (
-   <div className="navbar"> 
-       <div className="flex px-28 py-10 justify-between items-center shadow-md text-sm sticky">
+   <div className="navbar sticky top-0 bg-white z-50"> 
+       <div className="flex px-28 py-10 justify-between items-center shadow-md text-sm ">
             <div>
                 dark mode
             </div>
