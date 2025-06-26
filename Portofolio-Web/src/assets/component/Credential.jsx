@@ -1,6 +1,6 @@
 import educationElement from "../education.Element";
 import certificationElement from "../certification.Element";
-import unpad from "../../../public/logo-unpad1.webp";
+import unpad from "../logo-unpad1.webp";
 
 
 

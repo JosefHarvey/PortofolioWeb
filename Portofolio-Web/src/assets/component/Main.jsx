@@ -1,5 +1,5 @@
-import photo from "../../../public/testporto.jpg"
-import enviro from "../../../public/enviro.png"
+import photo from "../testporto.jpg"
+import enviro from "../enviro.png"
 import { useState } from "react";
 import Experience from "./Experience";
 import Credential from "./Credential";

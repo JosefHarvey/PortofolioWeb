@@ -1,5 +1,5 @@
-import dicoding from "./dicoding.png"
-import ITBOX from "./ITBOX.png"
+import dicoding from "../dicoding.png"
+import ITBOX from "../ITBOX.png"
 const certificationElement = [
     {
         id : 1,

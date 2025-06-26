@@ -1,5 +1,5 @@
 import experienceElements from "../../assets/experienceElements";
-import himatif from "../../../public/himatif.png";
+import himatif from "../himatif.png";
 
 export default function Experience() {
   return (
