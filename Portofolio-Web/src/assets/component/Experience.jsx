@@ -1,5 +1,5 @@
 import experienceElements from "../../assets/experienceElements";
-import himatif from "../himatif.png";
+
 
 export default function Experience() {
   return (
@@ -46,7 +46,7 @@ export default function Experience() {
             
             {/* Node/Logo Persegi di Tengah (Hanya Desktop) */}
             <div className="hidden sm:flex absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-white rounded-lg border-2 border-gray items-center justify-center z-10 overflow-hidden shadow-md dark:bg-gray-800 dark:border-gray-700">
-              <img src={himatif} alt="icon" className="w-full h-full object-contain" />
+              <img src="/himatif.png" alt="icon" className="w-full h-full object-contain" />
             </div>
 
 
@@ -54,7 +54,7 @@ export default function Experience() {
             <div className="block sm:hidden w-full pl-5 ">
                {/* Node/Logo Persegi di Kiri (Hanya Mobile) */}
               <div className="absolute -top-2 left-2 transform -translate-x-1/2 w-10 h-10 bg-white rounded-lg border-2 border-gray flex items-center justify-center z-10 overflow-hidden shadow-md dark:bg-gray-800 dark:border-gray-700">
-                <img src={himatif} alt="icon" className="w-full h-full object-contain p-1" />
+                <img src="/himatif.png" alt="icon" className="w-full h-full object-contain p-1" />
               </div>
 
               {/* Konten Mobile */}

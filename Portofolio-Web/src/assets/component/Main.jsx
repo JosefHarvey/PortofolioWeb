@@ -1,5 +1,4 @@
-import photo from "../testporto.jpg"
-import enviro from "../enviro.png"
+
 import { useState } from "react";
 import Experience from "./Experience";
 import Credential from "./Credential";
@@ -91,7 +90,7 @@ export default function Main() {
                     </div>
                     <div className="flex-1 flex items-center justify-center order-first lg:order-last">
                         <div className="w-[250px] md:w-[350px] h-auto dark:shadow-[2px_2px_25px_#374151,_-10px_-13px_25px_#2e3338]">
-                            <img src={photo} alt="Photo Josef Harvey" className="w-full h-auto object-cover rounded-md" />
+                            <img src="/testporto.jpg" alt="Photo Josef Harvey" className="w-full h-auto object-cover rounded-md" />
                         </div>
                     </div>
                 </div>
@@ -156,7 +155,7 @@ export default function Main() {
                         {/* Removed col-start-2 for mobile, applied only on lg screens */}
                         <div className="md:col-span-2 lg:col-span-1 lg:col-start-2 p-7 shadow-lg rounded-lg hover:shadow-xl bg-white dark:bg-[#030712] dark:text-[#f3f4f6] dark:shadow-[2px_2px_25px_#374151,_-10px_-13px_25px_#2e3338] duration-300">
                             <div className="w-auto h-auto mb-3">
-                                <img src={enviro} alt="Photo Enviro" className="w-full h-auto object-cover rounded-md" />
+                                <img src="/enviro.png"alt="Photo Enviro" className="w-full h-auto object-cover rounded-md" />
                             </div>
                             <div className="flex justify-between mb-3 mt-4 items-center">
                                 <a href="https://enviro-backend.onrender.com/" className="text-red-500 dark:text-[#db2777] text-sm font-[500] hover:underline inline-block group">

@@ -1,6 +1,6 @@
 import educationElement from "../education.Element";
 import certificationElement from "../certification.Element";
-import unpad from "../logo-unpad1.webp";
+
 
 
 
@@ -19,7 +19,7 @@ export default function Credential() {
             {educationElement.map((element) => (
               <div key={element.id} className="relative pl-14">
                 <div className="absolute top-5 left-5 transform -translate-x-1/2 w-10 h-10 bg-white rounded-lg border-2 border-gray flex items-center justify-center z-10 overflow-hidden">
-                  <img src={unpad} alt="Logo Universitas" className="w-full h-full object-contain" />
+                  <img src="/logo-unpad1.webp" alt="Logo Universitas" className="w-full h-full object-contain" />
                 </div>
 
                 <div className="bg-white border border-gray rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 dark:bg-[#030712] dark:border-[#030712] dark:shadow-[2px_2px_25px_#374151,_-10px_-13px_25px_#2e3338]">
