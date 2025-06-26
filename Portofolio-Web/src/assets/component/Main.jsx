@@ -1,19 +1,19 @@
-import photo from "../../assets/testporto.jpg"
-import enviro from "../../assets/enviro.png"
+import photo from "../../../public/testporto.jpg"
+import enviro from "../../../public/enviro.png"
 import { useState } from "react";
 import Experience from "./Experience";
 import Credential from "./Credential";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInbox, faLocationDot, faPhone, faCode, faWindowMaximize  } from "@fortawesome/free-solid-svg-icons";
+import { faInbox, faLocationDot, faPhone, faCode, faWindowMaximize } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedinIn, faInstagram, faReact, faFigma, faCss, faJs } from "@fortawesome/free-brands-svg-icons";
 
 
-export default function Main (){
-    const tabs = ["Experience" , "Credential" ]
-    const [activeTab,setActiveTab] = useState("Experience")
+export default function Main() {
+    const tabs = ["Experience", "Credential"]
+    const [activeTab, setActiveTab] = useState("Experience")
 
-    const renderContent = () =>{
-        switch(activeTab) {
+    const renderContent = () => {
+        switch (activeTab) {
             case 'Experience':
                 return <Experience />
             case 'Credential':
@@ -22,207 +22,220 @@ export default function Main (){
                 return null
         }
     }
-    
-    
-    return (
-        <div className="dark:bg-[#030712] dark:text-[#4b5563]">
-            <div id="home" className="container ">
-                <div className="flex pt-[150px] pb-[150px] items-center">
-                    <div className=" flex flex-col flex-1">
-                       <div className="content">
-                            <div className=" text-sm font-[500] tracking-widest uppercase mb-3">
-                                    Welcome to my portofolio
-                            </div>
-                            <div className=" text-7xl font-[700] mb-6">
-                                    Hi, I'm <span className="text-red dark:text-[#db2777]">Josef Harvey</span>
-                            </div>
-                            <div className="text-6xl font-[700] mb-6">
-                                    a  <span className="text-red dark:text-[#db2777]">Frontend Engineer</span>
-                            </div>
-                            <div className="leading-[30px] w-[600px] text-lg ">
-                                    I've always been drawn to things I could personalize, from toy cars and games to the digital experiences I build today.  
-                                    <br/> That early curiosity naturally led me to study Computer Science, where I learned to turn ideas into real, interactive products. 
-                                    <br/>Now, as a Front-End Web Developer, I focus on creating intuitive user interfaces with React, while continuously deepening my understanding of full-stack systems.    
-                            </div>  
-                         </div>
-                
-                        <a href="" className=" text-red dark:text-[#db2777] w-34 rounded-md pt-[15px] pb-[15px] pr-[35px] pl-[35px] mb-[50px] shadow-lg text-sm font-[700] hover:bg-red hover:text-white hover:-translate-y-2  transition duration-300 dark:hover:bg-[#030712] dark:hover:text-[#db2777]">View CV </a>
 
-                        <div className="flex ">
+
+    return (
+        <div className="dark:bg-[#030712] dark:text-[#f3f4f6]">
+            {/* ====== HOME SECTION ====== */}
+            <div id="home" className="container px-4"> {/* Added horizontal padding for mobile */}
+                {/* Changed flex direction for mobile, adjusted padding */}
+                <div className="flex flex-col lg:flex-row pt-[80px] pb-[80px] lg:pt-[150px] lg:pb-[150px] items-center gap-12 lg:gap-0">
+                    <div className="flex flex-col flex-1  lg:text-left items-center lg:items-start">
+                        <div className="content">
+                            <div className="text-sm font-[500] tracking-widest uppercase mb-3">
+                                Welcome to my portofolio
+                            </div>
+                            {/* Responsive Font Sizes */}
+                            <div className="text-5xl md:text-6xl lg:text-7xl font-[700]  mb-3 lg:mb-6">
+                                Hi, I'm <span className="text-red-500 dark:text-[#db2777]">Josef Harvey</span>
+                            </div>
+                            <div className="text-3xl sm: md:text-5xl lg:text-6xl font-[700] mb-3 lg:mb-6">
+                                a <span className="lg:text-red-500 dark:lg:text-[#db2777] ">Software Engineer</span>
+                            </div>
+                            {/* Responsive Width and Leading */}
+                            <div className="leading-[30px] w-full lg:w-[600px] text-lg lg:mb-8"> {/* Added bottom margin */}
+                                I've always been drawn to things I could personalize, from toy cars and games to the digital experiences I build today.
+                                <br /> That early curiosity naturally led me to study Computer Science, where I learned to turn ideas into real, interactive products.
+                                <br />Now, as a Front-End Web Developer, I focus on creating intuitive user interfaces with React, while continuously deepening my understanding of full-stack systems.
+                            </div>
+                        </div>
+
+                        <a href="#resume" className="text-red-500 dark:text-[#db2777] w-fit rounded-md pt-[15px] pb-[15px] pr-[35px] pl-[35px] mb-[50px] shadow-lg text-sm font-[700] hover:bg-red-500 hover:text-white hover:-translate-y-2 transition duration-300 dark:hover:bg-[#db2777] dark:hover:text-[#030712] dark:shadow-[2px_2px_25px_#374151,_-10px_-13px_25px_#2e3338]">
+                            View CV
+                        </a>
+
+                        {/* Changed to flex-col on mobile, added gap */}
+                        <div className="flex flex-col lg:flex-row gap-10 lg:gap-0 w-full">
                             <div className="flex-1">
-                                <p className="uppercase tracking-widest font-[500] mb-5">Find me on</p>            
-                                <div className="flex gap-10">
-                                    <a href="https://www.linkedin.com/in/josef-harvey/" className="bg-white dark:bg-[#030712] dark:hover:bg-[#030712] dark:hover:text-[#db2777] dark:shadow-white-2xl rounded  w-16 h-16 flex items-center justify-center shadow-2xl hover:bg-red hover:text-white hover:-translate-y-2  transition duration-300">
+                                <p className="uppercase tracking-widest font-[500] mb-5">Find me on</p>
+                                <div className="flex gap-6 justify-center lg:justify-start"> {/* Reduced gap for mobile */}
+                                    <a href="https://www.linkedin.com/in/josef-harvey/" className="bg-white rounded w-16 h-16 flex items-center justify-center shadow-2xl hover:bg-red-500 hover:text-white hover:-translate-y-2 transition duration-300 dark:rounded-md dark:bg-[#030712] dark:hover:bg-[#db2777] dark:hover:text-white dark:text-[#f3f4f6] dark:shadow-[2px_2px_25px_#374151,_-10px_-13px_25px_#2e3338]">
                                         <FontAwesomeIcon icon={faLinkedinIn} size="2x" />
                                     </a>
-                                    <a href="https://github.com/JosefHarvey" className="bg-white dark:bg-[#030712] dark:hover:bg-[#030712] dark:hover:text-[#db2777] rounded  w-16 h-16 flex items-center justify-center shadow-2xl hover:bg-red hover:text-white hover:-translate-y-2  transition duration-300">
+                                    <a href="https://github.com/JosefHarvey" className="bg-white rounded w-16 h-16 flex items-center justify-center shadow-2xl hover:bg-red-500 hover:text-white hover:-translate-y-2 transition dark:rounded-md dark:bg-[#030712] dark:hover:bg-[#db2777] dark:hover:text-white dark:text-[#f3f4f6] dark:shadow-[2px_2px_25px_#374151,_-10px_-13px_25px_#2e3338] duration-300">
                                         <FontAwesomeIcon icon={faGithub} size="2x" />
                                     </a>
-                                    <a href="https://www.instagram.com/harveyy_0/" className="bg-white dark:bg-[#030712] dark:hover:bg-[#030712] dark:hover:text-[#db2777] rounded  w-16 h-16 flex items-center justify-center shadow-2xl hover:bg-red hover:text-white hover:-translate-y-2  transition duration-300">
+                                    <a href="https://www.instagram.com/harveyy_0/" className="bg-white rounded w-16 h-16 flex items-center justify-center shadow-2xl hover:bg-red-500 hover:text-white hover:-translate-y-2 transition duration-300 dark:rounded-md dark:bg-[#030712] dark:hover:bg-[#db2777] dark:hover:text-white dark:text-[#f3f4f6] dark:shadow-[2px_2px_25px_#374151,_-10px_-13px_25px_#2e3338]">
                                         <FontAwesomeIcon icon={faInstagram} size="2x" />
                                     </a>
-                                    
                                 </div>
                             </div>
-                            <div className="flex-1">
+                            <div className="flex-1 mt-10 lg:mt-0">
                                 <p className="uppercase tracking-widest font-[500] mb-5">Best skill on</p>
-                                 <div className="flex gap-10">
-                                    <div className="bg-white dark:bg-[#030712] rounded  w-16 h-16 flex items-center justify-center shadow-2xl text-blue-300 ">
+                                <div className="flex gap-6 justify-center lg:justify-start"> {/* Reduced gap for mobile */}
+                                    <div className="bg-white dark:bg-[#030712] rounded w-16 h-16 flex items-center justify-center shadow-2xl text-blue-400 dark:shadow-[2px_2px_25px_#374151,_-10px_-13px_25px_#2e3338]">
                                         <FontAwesomeIcon icon={faReact} size="2x" />
                                     </div>
-                                    <div className="bg-white dark:bg-[#030712] rounded  w-16 h-16 flex items-center justify-center shadow-2xl text-red dark:text-[#db2777]">
+                                    <div className="bg-white dark:bg-[#030712] rounded w-16 h-16 flex items-center justify-center shadow-2xl text-red-500 dark:text-[#db2777] dark:shadow-[2px_2px_25px_#374151,_-10px_-13px_25px_#2e3338]">
                                         <FontAwesomeIcon icon={faFigma} size="2x" />
                                     </div>
-                                    <div className="bg-white dark:bg-[#030712] rounded  w-16 h-16 flex items-center justify-center shadow-2xl text-purple-500">
+                                    <div className="bg-white dark:bg-[#030712] rounded w-16 h-16 flex items-center justify-center shadow-2xl text-blue-600 dark:shadow-[2px_2px_25px_#374151,_-10px_-13px_25px_#2e3338]">
                                         <FontAwesomeIcon icon={faCss} size="2x" />
                                     </div>
-                                    <div className="bg-white dark:bg-[#030712] rounded  w-16 h-16 flex items-center justify-center shadow-2xl text-yellow-300">
+                                    <div className="bg-white dark:bg-[#030712] rounded w-16 h-16 flex items-center justify-center shadow-2xl text-yellow-400 dark:shadow-[2px_2px_25px_#374151,_-10px_-13px_25px_#2e3338]">
                                         <FontAwesomeIcon icon={faJs} size="2x" />
                                     </div>
-                                   
                                 </div>
                             </div>
-                            
                         </div>
                     </div>
-                    <div className="flex-1 flex items-center justify-center">
-                        <div className="w-[300px] h-auto ">
-                            <img src={photo} alt="Photo Josef Harvey" className="w-full h-auto object-cover rounded-md"/>
+                    <div className="flex-1 flex items-center justify-center order-first lg:order-last">
+                        <div className="w-[250px] md:w-[350px] h-auto dark:shadow-[2px_2px_25px_#374151,_-10px_-13px_25px_#2e3338]">
+                            <img src={photo} alt="Photo Josef Harvey" className="w-full h-auto object-cover rounded-md" />
                         </div>
                     </div>
                 </div>
-                <hr />
+                <hr className="dark:border-gray-700" />
             </div>
-            <div id="features" className="container">
-                <div className=" pb-[100px] pt-[100px]">
-                     <div>
-                        <p className="text-red dark:text-[#db2777] uppercase tracking-widest text-sm font-[600]">features</p>
-                        <p className="text-6xl font-[700] mb-6">What i <span className="text-8xl font-[500] text-red dark:text-[#db2777]">♡</span> to Do</p>
+
+            {/* ====== FEATURES SECTION ====== */}
+            <div id="features" className="container px-4">
+                <div className="pb-[100px] pt-[100px] text-center lg:text-left">
+                    <div>
+                        <p className="text-red-500 dark:text-[#db2777] uppercase tracking-widest text-sm font-[600]">features</p>
+                        {/* Responsive Font Sizes */}
+                        <p className="text-4xl lg:text-6xl font-[700] mb-6">What I <span className="text-6xl lg:text-8xl font-[500] text-red-500 dark:text-[#db2777]">♡</span> to Do</p>
                     </div>
-                    <div className="flex ">
-                        <div className="group mr-10  p-10 flex-1.5 shadow-lg rounded-lg hover:shadow-xl hover:bg-red bg-white dark:bg-[#030712] dark:hover:bg-[#030712]">
-                           <div className="group-hover:text-white group-hover:-translate-y-5  transition duration-300" >
+                    {/* Changed to flex-col on mobile, added gap */}
+                    <div className="flex flex-col lg:flex-row dark:mt-10 gap-8 lg:gap-4">
+                        {/* Removed mr-10, flex-1 allows it to grow */}
+                        <div className="group p-10 flex-1 shadow-lg rounded-lg hover:shadow-xl hover:bg-red-500 bg-white dark:bg-[#030712] dark:hover:dark:bg-[#030712] dark:text-[#f3f4f6] dark:shadow-[2px_2px_25px_#374151,_-10px_-13px_25px_#2e3338] text-left">
+                            <div className="group-hover:text-white group-hover:-translate-y-5 transition duration-300">
                                 <div className="pt-5 pb-5">
-                                     <FontAwesomeIcon icon={faCode} size="2x" className="group-hover:text-white text-red dark:text-[#db2777] dark:group-hover:text-[#db2777]" />
+                                    <FontAwesomeIcon icon={faCode} size="2x" className="group-hover:text-white text-red-500 dark:text-[#db2777] dark:group-hover:text-white" />
                                 </div>
                                 <p className="text-2xl font-[700] mb-3">Coding</p>
-                                <p className="leading-[30px] font-[500] ">I enjoy programming because it allows me to turn ideas into functional digital solutions that reflect my personal vision. It’s a creative outlet as well as an intellectual challenge that drives me to keep learning and growing.</p>
-                                <div class="h-1 w-10 rounded-2xl bg-gray-300 my-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                           </div>
+                                <p className="leading-[30px] font-[500] dark:text-gray-400 group-hover:text-gray-100">I enjoy programming because it allows me to turn ideas into functional digital solutions that reflect my personal vision. It’s a creative outlet as well as an intellectual challenge that drives me to keep learning and growing.</p>
+                                <div className="h-1 w-10 rounded-2xl bg-gray-300 my-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            </div>
                         </div>
-                        <div className="group mr-10  p-10 flex-1.5 shadow-lg rounded-lg hover:shadow-xl hover:bg-red bg-white dark:bg-[#030712] dark:hover:bg-[#030712]">
-                           <div className="group-hover:text-white group-hover:-translate-y-5  transition duration-300" >
-                                <div className="pt-5 pb-5 ">
-                                     <FontAwesomeIcon icon={faWindowMaximize} size="2x" className="group-hover:text-white text-red dark:text-[#db2777] dark:group-hover:text-[#db2777]" />
+                        <div className="group p-10 flex-1 shadow-lg rounded-lg hover:shadow-xl hover:bg-red-500 bg-white dark:bg-[#030712] dark:hover:bg-[#db2777] dark:text-[#f3f4f6] dark:shadow-[2px_2px_25px_#374151,_-10px_-13px_25px_#2e3338] text-left">
+                            <div className="group-hover:text-white group-hover:-translate-y-5 transition duration-300">
+                                <div className="pt-5 pb-5">
+                                    <FontAwesomeIcon icon={faWindowMaximize} size="2x" className="group-hover:text-white text-red-500 dark:text-[#db2777] dark:group-hover:text-white" />
                                 </div>
                                 <p className="text-2xl font-[700] mb-3">Web Development</p>
-                                <p className="leading-[30px] font-[500] ">II build responsive websites that work well on both mobile and desktop. I enjoy turning ideas into interactive, reliable, and engaging experiences. To me, good design balances usability, performance, and clean visuals.</p>
-                                <div class="h-1 w-10 rounded-2xl bg-gray-300 my-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                           </div>
+                                <p className="leading-[30px] font-[500] dark:text-gray-400 group-hover:text-gray-100">I build responsive websites that work well on both mobile and desktop. I enjoy turning ideas into interactive, reliable, and engaging experiences. To me, good design balances usability, performance, and clean visuals.</p>
+                                <div className="h-1 w-10 rounded-2xl bg-gray-300 my-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            </div>
                         </div>
-                        <div className="group mr-10  p-10 flex-1.5 shadow-lg rounded-lg hover:shadow-xl hover:bg-red bg-white dark:bg-[#030712] dark:hover:bg-[#030712] ">
-                           <div className="group-hover:text-white group-hover:-translate-y-5  transition duration-300" >
+                        <div className="group p-10 flex-1 shadow-lg rounded-lg hover:shadow-xl hover:bg-red-500 bg-white dark:bg-[#030712] dark:hover:bg-[#db2777] dark:text-[#f3f4f6] dark:shadow-[2px_2px_25px_#374151,_-10px_-13px_25px_#2e3338] text-left">
+                            <div className="group-hover:text-white group-hover:-translate-y-5 transition duration-300">
                                 <div className="pt-5 pb-5">
-                                     <FontAwesomeIcon icon={faFigma} size="2x" className="text-red dark:text-[#db2777] dark:group-hover:text-[#db2777] group-hover:text-white" />
+                                    <FontAwesomeIcon icon={faFigma} size="2x" className="text-red-500 dark:text-[#db2777] dark:group-hover:text-white group-hover:text-white" />
                                 </div>
                                 <p className="text-2xl font-[700] mb-3">UI Design</p>
-                                <p className="leading-[30px] font-[500] ">I enjoy designing interfaces that are both visually appealing and improve the user experience. For me, a good UI is the face of an application it builds trust and guides users naturally.</p>
-                                <div class="h-1 w-10 rounded-2xl bg-gray-300 my-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                           </div>
+                                <p className="leading-[30px] font-[500] dark:text-gray-400 group-hover:text-gray-100">I enjoy designing interfaces that are both visually appealing and improve the user experience. For me, a good UI is the face of an application it builds trust and guides users naturally.</p>
+                                <div className="h-1 w-10 rounded-2xl bg-gray-300 my-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                            </div>
                         </div>
-                       
-                        
                     </div>
                 </div>
-              <hr />
+                <hr className="dark:border-gray-700" />
             </div>
-            <div id="projects" className="container ">
+
+            {/* ====== PROJECTS SECTION ====== */}
+            <div id="projects" className="container px-4">
                 <div className="pb-[100px] pt-[100px]">
-                    <div className="flex flex-col justify-center items-center">
-                        <p className="text-red dark:text-[#db2777] uppercase tracking-widest text-sm font-[600] mb-3">made with <span className="text-base">♡</span></p>
-                        <p className="text-6xl font-[700] mb-6">My Projects</p>
+                    <div className="flex flex-col justify-center items-center text-center">
+                        <p className="text-red-500 dark:text-[#db2777] uppercase tracking-widest text-sm font-[600] mb-3">made with <span className="text-base">♡</span></p>
+                        <p className="text-4xl lg:text-6xl font-[700] mb-6">My Projects</p>
                     </div>
-                    <div className="grid grid-cols-3 gap-4 ">
-                        <div className="col-start-2  p-7 shadow-lg rounded-lg hover:shadow-xl dark:hover:text-white">
+                    {/* Changed grid to 1 column on mobile */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 dark:mt-10">
+                        {/* Removed col-start-2 for mobile, applied only on lg screens */}
+                        <div className="md:col-span-2 lg:col-span-1 lg:col-start-2 p-7 shadow-lg rounded-lg hover:shadow-xl bg-white dark:bg-[#030712] dark:text-[#f3f4f6] dark:shadow-[2px_2px_25px_#374151,_-10px_-13px_25px_#2e3338] duration-300">
                             <div className="w-auto h-auto mb-3">
-                                <img src={enviro} alt="Photo Enviro" className="w-full h-auto object-cover rounded-md"/>
+                                <img src={enviro} alt="Photo Enviro" className="w-full h-auto object-cover rounded-md" />
                             </div>
                             <div className="flex justify-between mb-3 mt-4 items-center">
-                                <a href="https://enviro-backend.onrender.com/" className="text-red dark:text-[#db2777] text-sm font-[500] hover:underline  inline-block group">
-                                Explore Enviro 
-                                <span className="inline-block transition-transform group-hover:translate-x-1"> →</span></a>
-                                <p className="text-sm font-[500]">Web</p>
+                                <a href="https://enviro-backend.onrender.com/" className="text-red-500 dark:text-[#db2777] text-sm font-[500] hover:underline inline-block group">
+                                    Explore Enviro
+                                    <span className="inline-block transition-transform group-hover:translate-x-1"> →</span>
+                                </a>
+                                <p className="text-sm font-[500] dark:text-gray-400">Web</p>
                             </div>
                             <p className="uppercase text-2xl font-[900] mb-3">Enviro</p>
-                            <p className="leading-[30px]">Enviro is a web-based learning application focused on educating users about environmental pollution covering its types, causes, and prevention methods.The goal of Enviro is to raise public awareness and make learning about pollution more accessible and engaging.</p>
+                            <p className="leading-[30px] dark:text-gray-400">Enviro is a web-based learning application focused on educating users about environmental pollution covering its types, causes, and prevention methods.The goal of Enviro is to raise public awareness and make learning about pollution more accessible and engaging.</p>
                         </div>
                     </div>
                 </div>
-            <hr />
+                <hr className="dark:border-gray-700" />
             </div>
-            <div id="resume" className="container ">
+
+            {/* ====== RESUME SECTION ====== */}
+            <div id="resume" className="container px-4">
                 <div className="pb-[100px] pt-[100px]">
-                    <div className="flex flex-col justify-center items-center">
-                        <p className="text-red dark:text-[#db2777] uppercase tracking-widest text-sm font-[600] mb-3">1 years experience</p>
-                        <p className="text-6xl font-[700]">My Resume</p>
-                    </div>   
+                    <div className="flex flex-col justify-center items-center text-center">
+                        <p className="text-red-500 dark:text-[#db2777] uppercase tracking-widest text-sm font-[600] mb-3">1 years experience</p>
+                        <p className="text-4xl lg:text-6xl font-[700]">My Resume</p>
+                    </div>
                     <div className="mt-11 flex flex-col items-center">
-                        <ul className="inline-flex mb-6 shadow-xl rounded-xl" id="myTab">
+                        <ul className="inline-flex mb-6 shadow-xl rounded-xl bg-white dark:bg-[#030712]" id="myTab">
                             {tabs.map((tab) => (
                                 <li key={tab}>
-                                <button
-                                    onClick={() => setActiveTab(tab)}
-                                    className={`px-6 py-4 text-md font-[500] h-[60px] w-100  transition-all duration-300    ${
-                                        activeTab === tab
-                                        ? " hover:text-red dark:text-[#db2777] shadow-2xl "
-                                        : " hover:text-red dark:text-[#db2777] cursor-pointer "
-                                    }`}
-                                >
-                                {tab}
-                                </button>
-                            </li>
+                                    <button
+                                        onClick={() => setActiveTab(tab)}
+                                        className={`px-4 md:px-6 py-4 text-md font-[500] h-[60px] w-auto transition-all duration-300 rounded-xl ${activeTab === tab
+                                            ? "text-red-500 dark:text-[#db2777] shadow-inner bg-gray-100 dark:bg-gray-900"
+                                            : "hover:text-red-500 dark:hover:text-[#db2777] cursor-pointer"
+                                            }`}
+                                    >
+                                        {tab}
+                                    </button>
+                                </li>
                             ))}
                         </ul>
-                        <div className="p-6 w-full rounded shadow-md bg-white dark:bg-[#030712]">
+                        <div className="p-4 md:p-6 w-full rounded shadow-md bg-white dark:bg-[#030712]">
                             {renderContent()}
                         </div>
-                    </div>             
+                    </div>
                 </div>
-            <hr />
+                <hr className="dark:border-gray-700" />
             </div>
 
-            <div id="contact" className="container">
+            {/* ====== CONTACT SECTION ====== */}
+            <div id="contact" className="container px-4">
                 <div className="pb-[100px] pt-[100px]">
-                    <div className="flex flex-col justify-center items-center">
-                        <p className="text-red dark:text-[#db2777] uppercase tracking-widest text-sm font-[600] mb-3">contact</p>
-                        <p className="text-6xl font-[700] mb-10">Contact With Me</p>
-                    </div>   
-                    <div className="flex flex-col items-center">
-                        <div className="text-red dark:text-[#db2777] text-3xl font-[700] mb-5">Contact Information</div>
-                        <div>
-                            <div className="shadow-lg px-6 py-4 text-md font-[500] h-[60px] w-100 mb-5 rounded hover:shadow-xl">
-                                <div className="flex gap-5 items-center">
-                                    <FontAwesomeIcon icon={faInbox} className= "text-xl  text-red dark:text-[#db2777]"/>
-                                    <div className="text-lg">josefharveymangaratua@gmail.com</div>
-                                    </div>
+                    <div className="flex flex-col justify-center items-center text-center">
+                        <p className="text-red-500 dark:text-[#db2777] uppercase tracking-widest text-sm font-[600] mb-3">contact</p>
+                        <p className="text-4xl lg:text-6xl font-[700] mb-10">Contact With Me</p>
+                    </div>
+                    <div className="flex flex-col items-center w-full">
+                        <div className="text-red-500 dark:text-[#db2777] text-2xl lg:text-3xl font-[700] mb-5">Contact Information</div>
+                        <div className="dark:mt-5 w-full max-w-lg"> {/* Constrain width */}
+                            <div className="shadow-lg px-6 py-4 text-md font-[500] h-auto md:h-[60px] w-full mb-5 rounded bg-white dark:bg-[#030712] hover:shadow-xl dark:shadow-[2px_2px_25px_#374151,_-10px_-13px_25px_#2e3338]">
+                                <div className="flex flex-col md:flex-row gap-2 md:gap-5 items-center">
+                                    <FontAwesomeIcon icon={faInbox} className="text-xl text-red-500 dark:text-[#db2777]" />
+                                    <div className="text-base lg:text-lg break-all">josefharveymangaratua@gmail.com</div>
+                                </div>
                             </div>
-                             <div className="shadow-lg px-6 py-4 text-md font-[500] h-[60px] w-100 mb-5 rounded hover:shadow-xl">
-                                <div className="flex gap-5 items-center">
-                                    <FontAwesomeIcon icon={faPhone} className= "text-xl text-red dark:text-[#db2777]"/>
-                                    <div className="text-lg ">(+62) 81517433866</div>
-                                    </div>
+                            <div className="shadow-lg px-6 py-4 text-md font-[500] h-auto md:h-[60px] w-full mb-5 rounded bg-white dark:bg-[#030712] hover:shadow-xl dark:shadow-[2px_2px_25px_#374151,_-10px_-13px_25px_#2e3338]">
+                                <div className="flex flex-col md:flex-row gap-2 md:gap-5 items-center">
+                                    <FontAwesomeIcon icon={faPhone} className="text-xl text-red-500 dark:text-[#db2777]" />
+                                    <div className="text-base lg:text-lg">(+62) 81517433866</div>
+                                </div>
                             </div>
-                             <div className="shadow-lg px-6 py-4 text-md font-[500] h-[60px] w-100 mb-5 rounded hover:shadow-xl">
-                                <div className="flex gap-5 items-center">
-                                    <FontAwesomeIcon icon={faLocationDot} className= "text-xl text-red dark:text-[#db2777] "/>
-                                    <div className="text-lg ">Jakarta, Indonesia</div>
-                                    </div>
+                            <div className="shadow-lg px-6 py-4 text-md font-[500] h-auto md:h-[60px] w-full mb-5 rounded bg-white dark:bg-[#030712] hover:shadow-xl dark:shadow-[2px_2px_25px_#374151,_-10px_-13px_25px_#2e3338]">
+                                <div className="flex flex-col md:flex-row gap-2 md:gap-5 items-center">
+                                    <FontAwesomeIcon icon={faLocationDot} className="text-xl text-red-500 dark:text-[#db2777]" />
+                                    <div className="text-base lg:text-lg">Jakarta, Indonesia</div>
+                                </div>
                             </div>
                         </div>
                     </div>
-
                 </div>
-            <hr />
+                <hr className="dark:border-gray-700" />
             </div>
         </div>
     );

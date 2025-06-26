@@ -3,7 +3,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 html{
-        scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -26,20 +26,7 @@ html{
     --color-fromCred:#4a5565;
 
 }
-.dark{
-    --color-background:#4b5563;
-    --color-pink:#db2777;
-    --color-gray:#e5e7eb;
-    --color-locationExp:#6b7280;
-    --color-hrExp:#d1d5db;
-    --color-discLi:#374151;
-    --color-tagCred:#1f2937;
-    --color-dateCred:#99a1af;
-    --color-hrCred:#6a7282;
-    --color-gpaCred:#364153;
-    --color-fromCred:#4a5565;
-    
-}
+
 body{
     background-color: var(--color-background);
 }
@@ -47,7 +34,7 @@ body{
 .container{
     width: 100%;
     padding-right: 15px;
-    padding-left: 35px;
+    padding-left: 15px;
     margin-left: auto;
     margin-right: auto;
 }
