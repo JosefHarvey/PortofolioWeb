@@ -90,7 +90,7 @@ export default function Main() {
                     </div>
                     <div className="flex-1 flex items-center justify-center order-first lg:order-last">
                         <div className="w-[250px] md:w-[350px] h-auto dark:shadow-[2px_2px_25px_#374151,_-10px_-13px_25px_#2e3338]">
-                            <img src="/testporto.jpg" alt="Photo Josef Harvey" className="w-full h-auto object-cover rounded-md" />
+                            <img src="/testPorto.jpg" alt="Photo Josef Harvey" className="w-full h-auto object-cover rounded-md" />
                         </div>
                     </div>
                 </div>
@@ -118,7 +118,7 @@ export default function Main() {
                                 <div className="h-1 w-10 rounded-2xl bg-gray-300 my-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                             </div>
                         </div>
-                        <div className="group p-10 flex-1 shadow-lg rounded-lg hover:shadow-xl hover:bg-red-500 bg-white dark:bg-[#030712] dark:hover:bg-[#db2777] dark:text-[#f3f4f6] dark:shadow-[2px_2px_25px_#374151,_-10px_-13px_25px_#2e3338] text-left">
+                        <div className="group p-10 flex-1 shadow-lg rounded-lg hover:shadow-xl hover:bg-red-500 bg-white dark:bg-[#030712] dark:hover:dark:bg-[#030712] dark:shadow-[2px_2px_25px_#374151,_-10px_-13px_25px_#2e3338] text-left">
                             <div className="group-hover:text-white group-hover:-translate-y-5 transition duration-300">
                                 <div className="pt-5 pb-5">
                                     <FontAwesomeIcon icon={faWindowMaximize} size="2x" className="group-hover:text-white text-red-500 dark:text-[#db2777] dark:group-hover:text-white" />
@@ -128,7 +128,7 @@ export default function Main() {
                                 <div className="h-1 w-10 rounded-2xl bg-gray-300 my-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                             </div>
                         </div>
-                        <div className="group p-10 flex-1 shadow-lg rounded-lg hover:shadow-xl hover:bg-red-500 bg-white dark:bg-[#030712] dark:hover:bg-[#db2777] dark:text-[#f3f4f6] dark:shadow-[2px_2px_25px_#374151,_-10px_-13px_25px_#2e3338] text-left">
+                        <div className="group p-10 flex-1 shadow-lg rounded-lg hover:shadow-xl hover:bg-red-500 bg-white dark:bg-[#030712] dark:hover:bg-[#030712] dark:text-[#f3f4f6] dark:shadow-[2px_2px_25px_#374151,_-10px_-13px_25px_#2e3338] text-left">
                             <div className="group-hover:text-white group-hover:-translate-y-5 transition duration-300">
                                 <div className="pt-5 pb-5">
                                     <FontAwesomeIcon icon={faFigma} size="2x" className="text-red-500 dark:text-[#db2777] dark:group-hover:text-white group-hover:text-white" />
