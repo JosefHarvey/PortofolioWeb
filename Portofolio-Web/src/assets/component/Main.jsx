@@ -49,7 +49,7 @@ export default function Main() {
                             </div>
                         </div>
 
-                        <a href="https://drive.google.com/file/d/1icOjt7tDCM9JFhKcyk5f9jPLdGM132d7/view?usp=sharing" className="text-red-500 dark:text-[#db2777] w-fit rounded-md pt-[15px] pb-[15px] pr-[35px] pl-[35px] mb-[50px] shadow-lg text-sm font-[700] hover:bg-red-500 hover:text-white hover:-translate-y-2 transition duration-300 dark:hover:bg-[#db2777] dark:hover:text-[#030712] dark:shadow-[2px_2px_25px_#374151,_-10px_-13px_25px_#2e3338]">
+                        <a href="https://drive.google.com/file/d/1xVgzlPO2Xefyf6O58j6EpPOq3NAQ3Ydv/view?usp=sharing" className="text-red-500 dark:text-[#db2777] w-fit rounded-md pt-[15px] pb-[15px] pr-[35px] pl-[35px] mb-[50px] shadow-lg text-sm font-[700] hover:bg-red-500 hover:text-white hover:-translate-y-2 transition duration-300 dark:hover:bg-[#db2777] dark:hover:text-[#030712] dark:shadow-[2px_2px_25px_#374151,_-10px_-13px_25px_#2e3338]">
                             View CV
                         </a>
 
